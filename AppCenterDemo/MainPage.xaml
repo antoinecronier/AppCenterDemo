@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="AppCenterDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppCenterDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <Button x:Name="event1Sender" Content="Event 1" Click="event1Sender_Click"/>
+            <Button x:Name="event2Sender" Content="Event 2" Click="event2Sender_Click"/>
+            <TextBox x:Name="customEventTextBox" PlaceholderText="Custom Event Name"/>
+            <Button x:Name="customEventSender" Content="Custom Event" Click="customEventSender_Click"/>
+
+            <Button x:Name="tryCatchCrash" Content="Isolated Crash" Click="tryCatchCrash_Click"/>
+            <Button x:Name="crash" Content="App crash" Click="crash_Click"/>
+            <Button x:Name="flush" Content="Flush datas" Click="flush_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
